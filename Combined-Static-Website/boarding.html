@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Google AI Studio App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script type="module" crossorigin src="./assets/index-ZKDoY1Cx.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-onbVcJ9b.css">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                orange: '#F48120',
+                gray: '#B5B3B3',
+                yellow: '#FFCA05',
+                sky: '#00B7DD',
+                navy: '#201A5B',
+                white: '#FFFFFF',
+                black: '#231F20',
+                darkOrange: '#DF6B22',
+                lightGray: '#DAD9D8',
+                darkSky: '#0095C1'
+              }
+            },
+            fontFamily: {
+              serif: ['"Gill Sans"', '"Gill Sans MT"', 'Calibri', 'sans-serif'],
+              sans: ['"Gill Sans"', '"Gill Sans MT"', 'Calibri', 'sans-serif'],
+            },
+            letterSpacing: {
+              widest: '.15em',
+            },
+            boxShadow: {
+              soft: '0 20px 40px -15px rgba(0,0,0,0.05)',
+              glow: '0 10px 30px -10px rgba(244,129,32,0.4)',
+              float: '0 25px 50px -12px rgba(32,26,91,0.15)'
+            }
+          }
+        }
+      }
+    </script>
+  </head>
+  <body class="font-sans text-brand-black antialiased bg-white selection:bg-brand-orange selection:text-white">
+    <header id="main-header"
+      class="fixed top-0 left-0 w-full z-50 bg-white shadow-sm transition-transform duration-300 transform translate-y-0">
+      <nav class="bg-transparent">
+        <div class="container mx-auto px-8 py-5 flex justify-between items-center">
+          <a href="index.html" class="flex items-center cursor-pointer group">
+            <img src="https://i.postimg.cc/bvqjtjRQ/logo.png" alt="Pavna School Logo"
+              class="h-12 md:h-14 w-auto object-contain transition-transform duration-300 group-hover:scale-105">
+          </a>
+          <div
+            class="hidden lg:flex items-center space-x-8 text-xs font-bold tracking-widest uppercase text-brand-navy">
+            <a href="index.html"
+              class="whitespace-nowrap hover:text-brand-orange transition-colors duration-300 border-b-2 border-transparent hover:border-brand-orange pb-1">About
+              Us</a>
+            <a href="boarding.html"
+              class="whitespace-nowrap hover:text-brand-orange transition-colors duration-300 border-b-2 border-transparent hover:border-brand-orange pb-1">Boarding</a>
+            <a href="franchise.html"
+              class="whitespace-nowrap hover:text-brand-orange transition-colors duration-300 border-b-2 border-transparent hover:border-brand-orange pb-1">Franchise</a>
+          </div>
+          <button id="mobile-menu-btn-boarding" aria-expanded="false" aria-controls="mobile-menu-boarding" class="lg:hidden text-2xl text-brand-navy hover:text-brand-orange transition-colors">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        <div id="mobile-menu-boarding" class="lg:hidden hidden px-8 pb-5">
+          <div class="flex flex-col gap-3 text-xs font-bold tracking-widest uppercase text-brand-navy border-t border-gray-200 pt-4">
+            <a href="index.html" class="hover:text-brand-orange transition-colors duration-300">About Us</a>
+            <a href="boarding.html" class="hover:text-brand-orange transition-colors duration-300">Boarding</a>
+            <a href="franchise.html" class="hover:text-brand-orange transition-colors duration-300">Franchise</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="pt-24">
+      <div id="root"></div>
+    </div>
+    <footer class="relative bg-brand-navy text-gray-300 pt-12 md:pt-16 pb-10 text-xs font-normal overflow-hidden z-20 mt-auto">
+      <div class="absolute inset-0 banner-pattern opacity-10 pointer-events-none"></div>
+      <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-brand-orange via-brand-yellow to-brand-sky"></div>
+
+      <div class="container mx-auto px-8 relative z-10">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-16 mb-6 border-b border-white/10 pb-10">
+          <div class="md:col-span-4 lg:col-span-4">
+            <div class="mb-6 bg-white inline-block p-3.5 rounded-2xl shadow-lg">
+              <img src="https://i.postimg.cc/bvqjtjRQ/logo.png" alt="Pavna School Logo" class="h-10 md:h-12 w-auto object-contain">
+            </div>
+            <p class="text-gray-400 mb-8 leading-relaxed font-medium text-[13px] pr-4">Empowering future leaders through holistic education, dynamic global curriculum, and unwavering core values.</p>
+            <a href="#" class="inline-flex items-center text-brand-yellow hover:text-white transition-colors font-bold uppercase tracking-widest text-[10px] group">
+              Get Directions <i class="fas fa-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform"></i>
+            </a>
+          </div>
+
+          <div class="md:col-span-4 lg:col-span-4">
+            <h4 class="font-bold mb-8 uppercase tracking-widest text-[11px] text-white flex items-center">
+              <span class="w-2 h-2 bg-brand-orange rounded-full mr-3 shadow-glow"></span> Our Campuses
+            </h4>
+            <div class="space-y-6 mb-8">
+              <div class="flex items-start space-x-3 text-gray-400 text-[12px]">
+                <i class="fas fa-map-marker-alt text-brand-orange mt-1 flex-shrink-0"></i>
+                <div class="leading-relaxed">
+                  <strong class="text-white block mb-0.5">Pavna School Sasni</strong>
+                  Pavna International School, Aligarh-Agra Highway, Sasni, Hathras, Uttar Pradesh - 204216, India
+                  <div class="mt-1 text-brand-sky font-bold flex items-center"><i class="fas fa-phone-alt mr-2 text-[10px]"></i> +91 82669 54007</div>
+                </div>
+              </div>
+              <div class="flex items-start space-x-3 text-gray-400 text-[12px]">
+                <i class="fas fa-map-marker-alt text-brand-orange mt-1 flex-shrink-0"></i>
+                <div class="leading-relaxed">
+                  <strong class="text-white block mb-0.5">Pavna School Hathras</strong>
+                  8 Km Milestone on SH-33, Hathras-Mathura Road, Hathras - 204213 (U.P.), India
+                  <div class="mt-1 text-brand-sky font-bold flex items-center"><i class="fas fa-phone-alt mr-2 text-[10px]"></i> +91 8006409329</div>
+                </div>
+              </div>
+              <div class="flex items-start space-x-3 text-gray-400 text-[12px]">
+                <i class="fas fa-map-marker-alt text-brand-orange mt-1 flex-shrink-0"></i>
+                <div class="leading-relaxed">
+                  <strong class="text-white block mb-0.5">Pavna School Aligarh</strong>
+                  Agra Highway, Near Gyan Mahavidyalaya, Aligarh - 202001, Uttar Pradesh, India
+                  <div class="mt-1 text-brand-sky font-bold flex items-center"><i class="fas fa-phone-alt mr-2 text-[10px]"></i> +91 8006409329</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="md:col-span-4 lg:col-span-4">
+            <h4 class="font-bold mb-8 uppercase tracking-widest text-[11px] text-white flex items-center">
+              <span class="w-2 h-2 bg-brand-yellow rounded-full mr-3"></span> Stay Connected
+            </h4>
+            <p class="text-gray-400 mb-5 text-[13px] leading-relaxed">Subscribe to our newsletter for the latest updates, event details, and school news.</p>
+            <form class="relative mb-8 group" onsubmit="return false;">
+              <input type="email" placeholder="Your Email Address" class="w-full bg-white/5 border border-white/10 rounded-full py-4 pl-6 pr-32 focus:outline-none focus:border-brand-orange text-white placeholder-gray-500 font-medium transition-all duration-300 focus:bg-white/10 shadow-inner" />
+              <button type="submit" class="absolute right-1.5 top-1.5 bottom-1.5 bg-brand-orange hover:bg-brand-darkOrange text-white rounded-full px-6 transition-all duration-300 uppercase text-[10px] font-bold tracking-widest">Join</button>
+            </form>
+            <div class="flex items-center gap-4">
+              <a href="#" class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-300 hover:text-white transition-all duration-300 leading-none"><i class="fab fa-facebook-f fa-fw"></i></a>
+              <a href="#" class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-300 hover:text-white transition-all duration-300 leading-none"><i class="fab fa-instagram fa-fw"></i></a>
+              <a href="#" class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-300 hover:text-white transition-all duration-300 leading-none"><i class="fab fa-youtube fa-fw"></i></a>
+              <a href="#" class="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-300 hover:text-white transition-all duration-300 leading-none"><i class="fab fa-linkedin-in fa-fw"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row justify-between items-center text-gray-400 font-medium text-[10px] uppercase tracking-widest">
+          <p>&copy; 2026 Pavna School. All rights reserved.</p>
+          <div class="space-x-5 mt-5 md:mt-0 flex items-center">
+            <a href="#" class="hover:text-brand-yellow transition-colors">Privacy Policy</a>
+            <span class="text-white/20">|</span>
+            <a href="#" class="hover:text-brand-yellow transition-colors">Terms of Service</a>
+            <span class="text-white/20">|</span>
+            <a href="#" class="hover:text-brand-yellow transition-colors">Sitemap</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      (function () {
+        var menuBtn = document.getElementById('mobile-menu-btn-boarding');
+        var menu = document.getElementById('mobile-menu-boarding');
+        if (!menuBtn || !menu) return;
+        menuBtn.addEventListener('click', function () {
+          var isHidden = menu.classList.contains('hidden');
+          menu.classList.toggle('hidden');
+          menuBtn.setAttribute('aria-expanded', isHidden ? 'true' : 'false');
+        });
+      })();
+    </script>
+  </body>
+</html>
+
